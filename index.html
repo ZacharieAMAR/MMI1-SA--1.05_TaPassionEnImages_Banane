@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="IMG/grosmichel_favicon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>SAÉ 1.05</title>
+</head>
+
+<body>
+    <div class="popup popup-invisible">
+        <span class="cache-fenetre">&times;</span>
+        <img id="image-popup" src="" alt="Image agrandie">
+    </div>
+
+    <header class="header">
+        <div class="flex align-center space-between">
+            <a href="index.html" class="header-logo">
+                <img src="IMG/grosmichel_favicon.webp">
+            </a>
+            <h1 class="header-title">
+                MA PASSION EN IMAGE
+            </h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1 : Titre et texte -->
+        <section class="section background-color1">
+            <div class="boxed">
+                <h2 class="text-center">LES BANANES</h2>
+                <p class="text-center">La banane est un fruit tropical issu du bananier, une plante herbacée de grande taille. Elle est principalement cultivée dans les régions chaudes et humides d’Afrique, d’Amérique latine, d’Asie et des Caraïbes.</p>
+            </div>
+        </section>
+
+        <!-- Section 2 : 3 premières images -->
+        <section class="section background-color2">
+            <div class="boxed">
+                <div class="liste-images-groupe" id="groupe-1"></div>
+            </div>
+        </section>
+
+        <!-- Section 3 : Titre et texte -->
+        <section class="section background-color1">
+            <div class="boxed">
+                <h2 class="text-center">LES PHOTOS DE BANANES</h2>
+                <p class="text-center">Si à titre personnel, j'aime beaucoup les bananes. Mais j'aime aussi la photographie, si bien qu'un jour j'ai décidé de réunir mes deux passions et de prendre des photos de bananes dans des lieux scéniques, loin, très loin de leur régions d'origine. C'est ainsi que "Banane. Une tragédie en deux frames." a vu le jour. J'y montre une banane sur les collines d'Edimbourg d'abord intacte puis complètement dévorée. Ça m'a fait rire et j'ai continué, en voici donc une sélection.</p>
+            </div>
+        </section>
+
+        <!-- Section 4 : 3 dernières images -->
+        <section class="section background-color2">
+            <div class="boxed">
+                <div class="liste-images-groupe" id="groupe-2"></div>
+            </div>
+        </section>
+
+        <!-- Section formulaire (on la garde pour plus tard) -->
+        <section class="section background-color1">
+            <div class="boxed">
+                <h2 class="text-center">Proposer une nouvelle image</h2>
+                <p class="text-center">Vous avez une image de banane à partager ? Proposez-la ici !</p>
+
+                <div class="formulaire">
+                    <label for="titre">Titre de l'image :</label>
+                    <input type="text" id="titre" placeholder="Ex: Banane dans l'espace !">
+
+                    <label for="description">Description :</label>
+                    <textarea id="description" rows="4" placeholder="Jusqu'où avez vous porté le concept de la photo de banane ?"></textarea>
+
+                    <label for="url-image">URL de l'image :</label>
+                    <input type="text" id="url-image" placeholder="https://site-web-de-la-banane-dans-">
+
+                    <label for="email">Votre email :</label>
+                    <input type="email" id="email" placeholder="votre@email.com">
+
+                    <button type="button" id="bouton-envoi">Envoyer ma proposition</button>
+
+                    <div id="message-retour"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>- Mentions légales - </p>
+        <p>AMAR Zacharie</p>
+        <p>126 Boulevard Aristide Briand, 94500 Champigny-sur-Marne</p>
+        <p>Propriété intellectuelle des images: © Wikimedia Commons & Zacharie AMAR</p>
+        <p>Mentions relatives à l'hébergeur du site :
+            o2switch Chem. des Pardiaux, 63000 Clermont-Ferrand, France 04 44 44 60 40</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
