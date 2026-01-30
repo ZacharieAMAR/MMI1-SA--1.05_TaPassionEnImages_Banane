@@ -1,0 +1,56 @@
+[
+    {
+        "titre": "Plant de banane",
+        "image": "bananas_plant.webp",
+        "imagePetite": "IMG/bananas_plant.webp",
+        "imageGrande": "IMG/bananas_plant.webp",
+        "descriptionImage": "<p>Il s'agit d'un plant de banane poussant au Maroc.</p>",
+        "source": "https://commons.wikimedia.org/wiki/Banana#/media/File:Bananas_-_Morocco.jpg",
+        "copyright": "© Wikimedia Commons"
+    },
+    {
+        "titre": "Banane Gros Michel",
+        "image": "bananas_grosmichel.webp",
+        "imagePetite": "IMG/bananas_grosmichel.webp",
+        "imageGrande": "IMG/bananas_grosmichel.webp",
+        "descriptionImage": "<p>Une banane de variété Gros Michel, autrefois la variété la plus exportée avant d'être décimée par une maladie.</p>",
+        "source": "https://commons.wikimedia.org/wiki/Category:Gros_Michel_bananas#/media/File:Pisang_Ambon_(Gros_Michel)_at_a_fruit_shop_in_Simpang_III_Sipin_-_Jambi_City,_JA.jpg",
+        "copyright": "© Wikimedia Commons"
+    },
+    {
+        "titre": "Banane Cavendish",
+        "image": "bananas_cavendish.webp",
+        "imagePetite": "IMG/bananas_cavendish.webp",
+        "imageGrande": "IMG/bananas_cavendish.webp",
+        "descriptionImage": "<p>Une banane de variété Cavendish, beaucoup plus commune aujourd'hui et présente dans nos supermarchés.</p>",
+        "source": "https://commons.wikimedia.org/wiki/Category:Cavendish_banana#/media/File:3_Bananas.jpg",
+        "copyright": "© Wikimedia Commons"
+    },
+    {
+        "titre": "Banane sur une colline",
+        "image": "bananezach_scotland.webp",
+        "imagePetite": "IMG/bananezach_scotland.webp",
+        "imageGrande": "IMG/bananezach_scotland.webp",
+        "descriptionImage": "<p>Banane posée sur la pente d'une colline à Edimbourg en Écosse.</p>",
+        "source": "https://www.instagram.com/p/C-TDEhhIatM/?img_index=1",
+        "copyright": "© Zacharie AMAR"
+    },
+    {
+        "titre": "Banane sur une montagne",
+        "image": "bananezach_mountain.webp",
+        "imagePetite": "IMG/bananezach_mountain.webp",
+        "imageGrande": "IMG/bananezach_mountain.webp",
+        "descriptionImage": "<p>Banane posée au sommet d'une montagne, face au Mt Blanc.</p>",
+        "source": "https://www.instagram.com/p/DGTSl4JsWVG/?img_index=1",
+        "copyright": "© Zacharie AMAR"
+    },
+    {
+        "titre": "Banane dans une statue de loutre",
+        "image": "bananezach_statue.webp",
+        "imagePetite": "IMG/bananezach_statue.webp",
+        "imageGrande": "IMG/bananezach_statue.webp",
+        "descriptionImage": "<p>Banane posée dans une statue de loutre au bord d'une rivière en corrèze.</p>",
+        "source": "https://www.instagram.com/p/DNqw31sM87y/?img_index=1",
+        "copyright": "© Zacharie AMAR"
+    }
+]

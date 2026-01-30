@@ -1,0 +1,321 @@
+/*.liste-images{
+    /*display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+} */
+
+body{
+    background-color: #252c31;
+}
+
+.flex{
+    display: flex;
+    gap: 5px;
+}
+
+.header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background: #fff387;
+    z-index: 999;
+    padding-block: 10px;
+    box-shadow: 1px 1px 25px #000000;
+}
+
+.header-logo{
+    display: block;
+}
+.header-logo img{
+    width: 50px;
+    margin-left: 10px;
+}
+
+.header-title{
+    margin-left: auto;
+    margin-right: auto;
+    color: #161616;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.section{
+    padding: 100px 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: 'Arsenal', sans-serif;
+    display: flex;
+}
+
+.background-color1{
+    background-color: #252c31;
+    color: #FFF3E0;
+}
+
+.background-color2{
+    background-color: #1f2529;
+    color: #FFF3E0;
+}
+
+
+
+.popup{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000; /* Au-dessus du header qui a z-index: 999 */
+}
+
+.popup-invisible{
+    display: none;
+}
+
+.popup-visible{
+    display: flex;
+}
+
+/* Image dans la popup */
+.popup img{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border: 3px solid #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Bouton de fermeture (croix) */
+.cache-fenetre{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cache-fenetre:hover{
+    color: #fff387;
+    transform: scale(1.2);
+}
+
+/* Style pour les images cliquables */
+.image-cliquable{
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px; /* Taille réduite par défaut */
+    height: auto;
+    border: 2px solid #fff387;
+    border-radius: 8px;
+}
+
+.image-cliquable:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(255, 243, 135, 0.5);
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.base-text{
+    font-size: 1.2rem;
+}
+
+/* Formulaire */
+.formulaire{
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulaire label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulaire input,
+.formulaire textarea{
+    padding: 10px;
+    border: 2px solid #444E5A;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.formulaire input:focus,
+.formulaire textarea:focus{
+    outline: none;
+    border-color: #fff387;
+    box-shadow: 0 0 5px rgba(255, 243, 135, 0.5);
+}
+
+#bouton-envoi{
+    padding: 15px;
+    background-color: #fff387;
+    color: #161616;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#bouton-envoi:hover{
+    background-color: #ffe44d;
+    transform: scale(1.02);
+}
+
+#message-retour{
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+#message-retour.succes{
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#message-retour.erreur{
+    display: block;
+    background-color: #f44336;
+    color: white;
+}
+
+/* Layout des sections */
+.boxed {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.background-color1 {
+    background-color: #252c31;
+    color: #FFF3E0;
+}
+
+.background-color2 {
+    background-color: #1f2529;
+    color: #FFF3E0;
+}
+
+/* Centrage et alignement des textes */
+.text-center {
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Conteneur des groupes d'images */
+.liste-images-groupe {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Style des cartes d'images */
+.carte-image {
+    flex: 1;
+    max-width: 350px;
+    min-width: 280px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carte-image:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.carte-image h3 {
+    padding: 20px 15px 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.carte-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.carte-image img:hover {
+    transform: scale(1.05);
+}
+
+.carte-image p {
+    padding: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.carte-image .source {
+    padding: 0 15px 15px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.carte-image .source a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.carte-image .source a:hover {
+    opacity: 1;
+}
+
+
+footer{
+    background-color: #1f2529;
+    text-align: center;
+    color: #FFF3E0;
+    font-family: "Ubuntu", sans-serif;
+    border: solid #FFF3E0;
+    border-radius: 15px 5px;
+
+}
+/* .popup-visible{
+    display: flex;
+} */
+
+/* footer{
+
+} */ 
